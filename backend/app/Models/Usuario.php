@@ -53,6 +53,7 @@ class Usuario extends Authenticatable implements JWTSubject
         'verificado'       => 'boolean',
         'estado'           => 'boolean',
         'codigo_expira_en' => 'datetime',
+        'rol_id'            => 'integer',
     ];
 
     /**
