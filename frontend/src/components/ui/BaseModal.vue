@@ -140,9 +140,8 @@ async function loginConGoogle() {
 }
 
 function irARegistro() {
-  if (!bsModal) { router.push('/registro'); return }
-  modalEl.value.addEventListener('hidden.bs.modal', () => router.push('/registro'), { once: true })
-  bsModal.hide()
+  bsModal?.hide()
+  router.push({ name: 'registro' })
 }
 </script>
 
